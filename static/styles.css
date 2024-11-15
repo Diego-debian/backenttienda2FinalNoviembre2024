@@ -1,0 +1,121 @@
+/* General Reset */
+body, h1, h2, h3, p, a, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #343a40;
+    border-radius: 50px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #dbe1e8;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #0056b3;
+}
+
+/* Cards */
+.card {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-primary {
+    border: 2px solid #007bff;
+}
+
+/* Headings */
+.card h2, .card h3 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+/* Forms */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form label {
+    font-weight: bold;
+    color: #555555;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Actions Buttons */
+.actions button {
+    margin-right: 5px;
+}
+
+/* Card Small */
+.card-small {
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+/* User Cards */
+.user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

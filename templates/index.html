@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% block content %}
+<h2>Bienvenido a la TiendaCompreAqui</h2>
+<p>Desde aquí, puedes gestionar los usuarios fácilmente:</p>
+<ul>
+
+    <li><a href="{{ url_for('crear_usuario') }}">Crear un Nuevo Usuario</a></li>
+    <li><a href="{{ url_for('listar_usuarios') }}">Listar Usuarios</a></li>
+</ul>
+{% endblock %}

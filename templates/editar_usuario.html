@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <div class="card card-primary">
+        <h2>Editar Usuario</h2>
+        <form class="form" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="{{ usuario.nombre }}" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" value="{{ usuario.apellido }}" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" value="{{ usuario.telefono }}" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" value="{{ usuario.direccion }}" required>
+            
+            <button type="submit" class="button">Guardar Cambios</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Desde aquí, puedes gestionar los Usuarios fácilmente:</p>
+<div class="card card-small">
+    <a href="{{ url_for('crear_usuario') }}">Crear un Nuevo Usuario</a>
+</div>
+
+<h2>Lista de Usuarios</h2>
+<div class="user-cards">
+    {% for usuario in usuarios %}
+    <div class="card card-small">
+        <h3>{{ usuario.nombre }} {{ usuario.apellido }}</h3>
+        <p><strong>Teléfono:</strong> {{ usuario.telefono }}</p>
+        <p><strong>Dirección:</strong> {{ usuario.direccion }}</p>
+        <div class="actions">
+            <form action="{{ url_for('editar_usuario', id=usuario.idUsuario) }}" method="get" style="display:inline;">
+                <button class="button">Editar</button>
+            </form>
+            <form action="{{ url_for('eliminar_usuario', id=usuario.idUsuario) }}" method="post" style="display:inline;">
+                <button class="button button-danger">Eliminar</button>
+            </form>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
